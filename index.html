@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="673656ec75f7d1a3f718689c.js"></script>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Coinbase Payment Confirmation</title>
+<style>
+    body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f2f5; /* Light background for professionalism */
+    }
+
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .popup {
+        background: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+        padding: 20px;
+        width: 90%;
+        max-width: 300px;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    .popup-header {
+        font-weight: bold;
+        color: #3671e9; /* Coinbase blue */
+        margin-bottom: 20px;
+    }
+
+    .coinbase-logo {
+        width: 80px;
+        height: auto;
+        margin: 10px auto;
+    }
+
+    .payment-amount {
+        font-size: 16px;
+        font-weight: bold;
+        margin: 15px 0;
+    }
+
+    .additional-info {
+        font-size: 12px;
+        color: #777;
+    }
+
+    .confirm-button {
+        background-color: #3671e9;
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 20px 0;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .confirm-button:hover {
+        background-color: #2a63db;
+    }
+
+    .close-button {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background: none;
+        border: none;
+        font-size: 20px;
+        cursor: pointer;
+        color: #333;
+    }
+</style>
+</head>
+<body>
+
+<div class="overlay">
+    <div class="popup">
+        <span class="close-button" onclick="this.parentElement.parentElement.style.display='none';">&times;</span>
+        <div class="popup-header">Pay the Invoice from Coinbase</div>
+        <img class="coinbase-logo" src="coinbase.png" alt="Coinbase Logo">
+        <div class="payment-amount">Total amount to be Paid $69.99</div>
+        <div class="additional-info">(After payment you will receive private access to AI Terminal)</div>
+        <button class="confirm-button">Confirm Payment</button>
+    </div>
+</div>
+
+</body>
+</html>
